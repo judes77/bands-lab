@@ -133,15 +133,22 @@ INSERT INTO bands_musicians (musician_id, band_id) VALUES (18,19);
 
 
 -- Select all of the musicians who have a net worth greater than or equal to 350000, ordered by net worth descending
-SELECT musicians.first_name, musicians.net_worth
-FROM musicians
-WHERE musicians.net_worth >= 350000
-ORDER BY net_worth DESC;
+-- SELECT musicians.first_name, musicians.net_worth
+-- FROM musicians
+-- WHERE musicians.net_worth >= 350000
+-- ORDER BY net_worth DESC;
 
 
 -- Select the musician with the highest net worth
--- Select all of the musicians with a net worth between 350000 and 2000000, ordered by net worth descending
+SELECT musicians.first_name, musicians.last_name, musicians.net_worth
+FROM musicians
+WHERE net_worth = 6000000;
 
+-- Select all of the musicians with a net worth between 350000 and 2000000, ordered by net worth descending
+-- SELECT musicians.first_name, musicians.net_worth
+-- FROM musicians
+-- WHERE musicians.net_worth BETWEEN 350000 AND 2000000
+-- ORDER BY net_worth DESC;
 
 
 
